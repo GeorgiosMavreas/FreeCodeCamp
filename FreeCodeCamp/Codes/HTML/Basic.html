@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My FreeCodeCamp Lessons</title>
+</head>
+
+<body>
+    <!--You can add images to your website by using the img element, and point to a specific image's URL using the src attribute.
+Note that img elements are self-closing.
+All img elements must have an alt attribute. The text inside an alt attribute is used for screen readers to improve accessibility 
+and is displayed if the image fails to load.
+Note: If the image is purely decorative, using an empty alt attribute is a best practice.
+Ideally the alt attribute should not contain special characters unless needed.
+Let's add an alt attribute to our img example above:-->
+    <h2>CatPhotoApp</h2>
+
+    <main>
+        <img src="G:\FreeCodeCamp\images\your-image.jpg" alt="My Cat"><br><a href="https://www.freecatphotoapp.com"
+            target="_blank">cat photos</a>
+        <p>
+            Kitty psum dolor sit amet, shed everywhere shed
+            everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas veniam ipsam ratione nisi officiis ut est
+            fuga, assumenda dolore labore!</p>
+        <p>Esse quaerat eius dolorem architecto tenetur corporis voluptates neque sint facilis, illum iusto aspernatur
+            alias quis eligendi, porro asperiores aliquam!</p>
+
+
+
+        <!--Create a Form Element.
+You can build web forms that actually submit data to a server using nothing more than pure HTML. You can do this 
+by specifying an action attribute on your form element.-->
+        <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+
+            
+            <!--Create a Set of Radio Buttons.
+You can use radio buttons for questions where you want the user to only give you one answer out of multiple options.
+Radio buttons are a type of input.
+Each of your radio buttons can be nested within its own label element. By wrapping an input element inside of a label 
+element it will automatically associate the radio button input with the label element surrounding it.
+All related radio buttons should have the same name attribute to create a radio button group. By creating a radio group, 
+selecting any single radio button will automatically deselect the other buttons within the same group ensuring only one 
+answer is provided by the user.
+It is considered best practice to set a for attribute on the label element, with a value that matches the value of the id 
+attribute of the input element. 
+This allows assistive technologies to create a linked relationship between the label and the related input element-->
+
+<!--Use the value attribute with Radio Buttons and Checkboxes.
+When a form gets submitted, the data is sent to the server and includes entries for the options selected. Inputs of type 
+radio and checkbox report their values from the value attribute.-->
+
+<!--Check Radio Buttons and Checkboxes by Default.
+You can set a checkbox or radio button to be checked by default using the checked attribute.
+To do this, just add the word checked to the inside of an input element.-->
+
+           <label for="indoor">Indoor  &nbsp;   
+                <input type="radio" value="indoor" name="indoor-outdoor" id="indoor" checked>
+            </label><br>
+
+            <label for="outdoor">Outdoor
+                <input type="radio" value="outdoor" name="indoor-outdoor" id="outdoor">
+            </label><br>
+
+            <!--Create a Set of Checkboxes.
+Forms commonly use checkboxes for questions that may have more than one answer.
+Checkboxes are a type of input.
+Each of your checkboxes can be nested within its own label element. By wrapping an input element inside of a label element 
+it will automatically associate the checkbox input with the label element surrounding it.
+All related checkbox inputs should have the same name attribute.
+It is considered best practice to explicitly define the relationship between a checkbox input and its corresponding label by 
+setting the for attribute on the label element to match the id attribute of the associated input element.
+Here, you have two radio inputs. When the user submits the form with the indoor option selected, the form data 
+will include the line: indoor-outdoor=indoor. This is from the name and value attributes of the "indoor" input.
+If you omit the value attribute, the submitted form data uses the default value, which is on. In this scenario, 
+if the user clicked the "indoor" option and submitted the form, the resulting form data would be indoor-outdoor=on, 
+which is not useful. So the value attribute needs to be set to something to identify the option.-->
+
+            <label for="loving">Loving &nbsp;
+                <input type="checkbox" value="loving" name="personality" id="loving" checked>
+            </label><br>
+
+            <label for="carrying">Lazy
+                <input type="checkbox" value="lazy" name="personality" id="lazy">
+            </label><br>
+
+            <label for="sensitive">Energetic
+                <input type="checkbox" value="energetic" name="personality" id="energetic">
+            </label><br><br>
+
+            <!--Add Placeholder Text to a Text Field
+Placeholder text is what is displayed in your input element before your user has inputted anything.-->
+
+            <!--Use HTML5 to Require a Field.
+You can require specific form fields so that your user will not be able to submit your form until he or she has filled them out.
+For example, if you wanted to make a text input field required, you can just add the attribute required within your input element, 
+like this: <input type="text" required>-->
+
+<input type="text" name="" id="" placeholder="cat photo URL" required>
+
+<!--Add a Submit Button to a Form
+Let's add a submit button to your form. Clicking this button will send the data from your form to the URL you specified with 
+your form's action attribute.-->
+
+<button type="submit">Submit</button><br>
+
+        </form>
+    </main>
+
+
+
+
+
+
+</body>
+
+</html>
